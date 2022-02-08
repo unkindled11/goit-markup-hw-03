@@ -15,6 +15,7 @@
 /* Цвет героя #2F303A */
 
 body {
+  margin: 0;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 
@@ -80,6 +81,7 @@ a {
 .hero {
   color: var(--primary-bg-color);
   background-color: var(--hero-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -87,13 +89,22 @@ a {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
+  min-width: 696px;
 }
 
 .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
   color: var(--primary-bg-color);
   background-color: var(--action-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
 
   font-family: inherit;
@@ -121,6 +132,8 @@ a {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
 }
 
 /* Business,Team , Projects */
@@ -214,11 +227,19 @@ a {
 /* Portfolio buttons */
 
 .button {
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  border: 1px solid transparent;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  cursor: pointer;
 }
 
 .button:hover,
@@ -227,6 +248,24 @@ a {
   background-color: var(--action-color);
 }
 
-.button {
-  cursor: pointer;
+.container {
+  width: 1200px;
+  outline: #000000 solid 2px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0px 94px 0px;
+}
+
+.adv-section {
+  padding-top: 94px;
 }
