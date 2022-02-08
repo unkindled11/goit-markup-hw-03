@@ -1,0 +1,232 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --action-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --hero-color: #2f303a;
+}
+/* цвет основного текста #212121 */
+/* цвет вторичного текста #757575 */
+/* белый текст + фон #ffffff*/
+/* вторичный цвет фона #F5F4FA  */
+/* серый цвет почты и телефона в хувере rgba(255, 255, 255, 0.6); */
+/* цвет акцент ( действия) #2196F3 */
+/* Цвет героя #2F303A */
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Logo */
+.logo {
+  color: #000000;
+
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+/*Site-nav */
+.site-nav-link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Header contacts */
+.header-contacts-info {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link:hover,
+.header-contacts-info:hover,
+.site-nav-link:focus,
+.header-contacts-info:focus {
+  color: var(--action-color);
+}
+
+.site-nav-link.current {
+  color: var(--action-color);
+}
+.web {
+  color: var(--action-color);
+}
+
+/* Hero */
+
+.hero {
+  color: var(--primary-bg-color);
+  background-color: var(--hero-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--primary-bg-color);
+  background-color: var(--action-color);
+  font-weight: 700;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+/* Advantages */
+
+.advantages-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Business,Team , Projects */
+
+.team-title,
+.business-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-pos,
+.project-description {
+  color: var(--secondary-text-color);
+}
+
+.team-pos {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.project-name {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.team-box,
+.project-box {
+  background-color: var(--primary-bg-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--hero-color);
+}
+
+.footer .logo {
+  color: var(--primary-bg-color);
+}
+
+.adress {
+  color: var(--primary-bg-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts-info {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.site-nav-link:hover,
+.footer-contacts-info:hover,
+.site-nav-link:focus,
+.footer-contacts-info:focus {
+  color: var(--action-color);
+}
+
+/* Portfolio buttons */
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--action-color);
+}
+
+.button {
+  cursor: pointer;
+}
