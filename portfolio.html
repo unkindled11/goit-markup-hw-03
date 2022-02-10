@@ -20,30 +20,33 @@
 
   <body>
     <!--Header-->
-    <header>
-      <div class="container">
-        <nav>
+    <header class="hr-line">
+      <div class="container navigation">
+        <nav class="navigation">
           <a class="logo" href="/"><span class="web">Web</span>Studio</a>
           <ul class="site-nav list">
-            <li><a class="site-nav-link" href="./index.html">Студия</a></li>
-            <li>
-              <a class="site-nav-link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="item">
+              <a class="site-nav-link" href="./index.html">Студия</a>
             </li>
-            <li><a class="site-nav-link" href="">Контакты</a></li>
+            <li class="item">
+              <a class="site-nav-link current" href="">Портфолио</a>
+            </li>
+            <li class="item">
+              <a class="site-nav-link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <!-- Link to e-mail address -->
-        <ul class="list">
-          <li>
+        <!--  Link to e-mail address -->
+
+        <ul class="contacts list">
+          <li class="item">
             <a class="header-contacts-info" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <!-- Link to phone number  -->
-          <li>
+          <li class="item">
             <a class="header-contacts-info" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -54,102 +57,130 @@
     <!--Main-->
     <main>
       <!-- Projects -->
-      <section>
+      <section class="section">
         <div class="container">
           <h1 class="examples">Примеры работ</h1>
           <!-- Buttons -->
-          <ul class="list">
-            <li><button class="button" type="button">Все</button></li>
-            <li><button class="button" type="button">Веб-сайты</button></li>
-            <li><button class="button" type="button">Приложения</button></li>
-            <li><button class="button" type="button">Дизайн</button></li>
-            <li><button class="button" type="button">Маркетинг</button></li>
-          </ul>
-          <ul class="list">
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img src="images/port(1).jpg" alt="laptop" width="370" />
-                <h2 class="project-name">Технокряк</h2>
-                <p class="project-description">Веб-сайт</p>
-              </a>
-            </li>
+            <ul class="buttons-list list">
+              <li class="button-distance">
+                <button class="button" type="button">Все</button>
+              </li>
+              <li class="button-distance">
+                <button class="button" type="button">Веб-сайты</button>
+              </li>
+              <li class="button-distance">
+                <button class="button" type="button">Приложения</button>
+              </li>
+              <li class="button-distance">
+                <button class="button" type="button">Дизайн</button>
+              </li>
+              <li class="button-distance">
+                <button class="button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+            <div class="projects-container">
+              <ul class="project-list list">
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img src="images/port(1).jpg" alt="laptop" width="370" />
+                    <h2 class="project-name">Технокряк</h2>
+                    <p class="project-description">Веб-сайт</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img
-                  src="images/port(2).jpg"
-                  alt="Poster New Orlean vs Golden Star"
-                  width="370"
-                />
-                <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
-                <p class="project-description">Дизайн</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img
+                      src="images/port(2).jpg"
+                      alt="Poster New Orlean vs Golden Star"
+                      width="370"
+                    />
+                    <h2 class="project-name">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="project-description">Дизайн</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img
-                  src="images/port(3).jpg"
-                  alt="Logo of restaurant"
-                  width="370"
-                />
-                <h2 class="project-name">Ресторан Seafood</h2>
-                <p class="project-description">Приложение</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img
+                      src="images/port(3).jpg"
+                      alt="Logo of restaurant"
+                      width="370"
+                    />
+                    <h2 class="project-name">Ресторан Seafood</h2>
+                    <p class="project-description">Приложение</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img src="images/port(4).jpg" alt="Headphones" width="370" />
-                <h2 class="project-name">Проект Prime</h2>
-                <p class="project-description">Маркетинг</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img
+                      src="images/port(4).jpg"
+                      alt="Headphones"
+                      width="370"
+                    />
+                    <h2 class="project-name">Проект Prime</h2>
+                    <p class="project-description">Маркетинг</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img src="images/port(5).jpg" alt="Two boxes" width="370" />
-                <h2 class="project-name">Проект Boxes</h2>
-                <p class="project-description">Приложение</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img
+                      src="images/port(5).jpg"
+                      alt="Two boxes"
+                      width="370"
+                    />
+                    <h2 class="project-name">Проект Boxes</h2>
+                    <p class="project-description">Приложение</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href="">
-                <img src="images/port(6).jpg" alt="Computer" width="370" />
-                <h2 class="project-name">Inspiration has no Borders</h2>
-                <p class="project-description">Веб-сайт</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href="">
+                    <img src="images/port(6).jpg" alt="Computer" width="370" />
+                    <h2 class="project-name">Inspiration has no Borders</h2>
+                    <p class="project-description">Веб-сайт</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img src="images/port(7).jpg" alt="Book" width="370" />
-                <h2 class="project-name">Издание Limited Edition</h2>
-                <p class="project-description">Дизайн</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img src="images/port(7).jpg" alt="Book" width="370" />
+                    <h2 class="project-name">Издание Limited Edition</h2>
+                    <p class="project-description">Дизайн</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img src="images/port(8).jpg" alt="Label tag" width="370" />
-                <h2 class="project-name">Проект LAB</h2>
-                <p class="project-description">Маркетинг</p>
-              </a>
-            </li>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img
+                      src="images/port(8).jpg"
+                      alt="Label tag"
+                      width="370"
+                    />
+                    <h2 class="project-name">Проект LAB</h2>
+                    <p class="project-description">Маркетинг</p>
+                  </a>
+                </li>
 
-            <li class="project-box">
-              <a class="project-link" href=""
-                ><img
-                  src="images/port(9).jpg"
-                  alt="Human typing on laptop"
-                  width="370"
-                />
-                <h2 class="project-name">Growing Business</h2>
-                <p class="project-description">Приложение</p>
-              </a>
-            </li>
-          </ul>
+                <li class="project-box">
+                  <a class="project-link" href=""
+                    ><img
+                      src="images/port(9).jpg"
+                      alt="Human typing on laptop"
+                      width="370"
+                    />
+                    <h2 class="project-name">Growing Business</h2>
+                    <p class="project-description">Приложение</p>
+                  </a>
+                </li>
+              </ul>
+              </div>
+            
+          </div>
         </div>
       </section>
     </main>
@@ -158,16 +189,16 @@
       <div class="container">
         <a class="footer logo" href="/"> <span class="web">Web</span>Studio</a>
         <address>
-          <ul class="list">
+          <ul class="adress-list list">
             <li>
               <a class="adress" href=""> г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li>
+            <li class="contacts-distance">
               <a class="footer-contacts-info" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="">
               <a class="footer-contacts-info" href="+380991111111"
                 >+38 099 111 11 11</a
               >
