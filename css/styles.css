@@ -147,7 +147,8 @@ ol {
   color: var(--primary-bg-color);
   background-color: var(--hero-color);
   text-align: center;
-  padding: 200px 452px 280px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-box {
@@ -200,7 +201,7 @@ ol {
   width: 270px;
 }
 
-a .advantages-title {
+.advantages-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -255,6 +256,11 @@ a .advantages-title {
   letter-spacing: 0.03em;
 }
 
+.member-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-cards {
   display: flex;
   justify-content: center;
@@ -283,7 +289,7 @@ a .advantages-title {
 }
 
 .team-name {
-  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -297,8 +303,8 @@ a .advantages-title {
 }
 
 .team-pos {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  /* margin-top: 10px;
+  margin-bottom: 30px; */
 
   font-size: 16px;
   line-height: 1.18;
@@ -373,7 +379,7 @@ a .advantages-title {
 .buttons-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .buttons-list .button-distance:not(:first-child) {
@@ -416,7 +422,7 @@ a .advantages-title {
 }
 
 .project-box {
-  width: 370px;
+  width: 371px;
   margin-right: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #eeeeee;
@@ -433,11 +439,13 @@ a .advantages-title {
 }
 
 .project-name {
-  margin-top: 20px;
-
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 
-.project-description {
+.project-layout {
+  padding: 20px 24px;
+}
+
+/* .project-description {
   margin: 4px 24px 20px 24px;
-}
+} */
