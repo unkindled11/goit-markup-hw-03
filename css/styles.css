@@ -14,6 +14,8 @@
 /* цвет акцент ( действия) #2196F3 */
 /* Цвет героя #2F303A */
 
+/* body */
+
 body {
   margin: 0;
   color: var(--primary-text-color);
@@ -22,40 +24,79 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* ul */
+
+.container {
+  width: 1230lhpx;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
 }
+
+/* a */
 
 a {
   text-decoration: none;
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 /* Logo */
+
+.web {
+  color: var(--action-color);
+}
+
 .logo {
   color: #000000;
-
   font-family: Raleway, sans-serif;
   text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin: ;
 }
 
 /*Site-nav */
-.site-nav-link {
-  color: var(--primary-text-color);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.site-nav {
+  display: flex;
+  margin-left: 93px;
 }
 
-/* Header contacts */
-.header-contacts-info {
-  color: var(--secondary-text-color);
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 
+.site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -72,8 +113,29 @@ a {
 .site-nav-link.current {
   color: var(--action-color);
 }
-.web {
-  color: var(--action-color);
+
+/* Header contacts */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-info {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
 }
 
 /* Hero */
@@ -82,6 +144,7 @@ a {
   color: var(--primary-bg-color);
   background-color: var(--hero-color);
   text-align: center;
+  padding: 200px 452px 280px 452px;
 }
 
 .hero-title {
@@ -118,7 +181,30 @@ a {
 
 /* Advantages */
 
-.advantages-title {
+/* .advantages-item-01,
+.advantages-item-02,
+.advantages-item-03 {
+  margin-right: 30px;
+}
+
+.advantages-item-04 {
+  margin-right: 30px;
+} */
+
+.advantages {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages .advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-item {
+  width: 270px;
+}
+
+a .advantages-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -138,6 +224,32 @@ a {
 
 /* Business,Team , Projects */
 
+.business-img {
+  display: flex;
+  justify-content: center;
+}
+
+.business-distance {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.examples {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.business-title {
+  margin-bottom: 50px;
+}
+
 .team-title,
 .business-title {
   font-weight: bold;
@@ -147,11 +259,36 @@ a {
   letter-spacing: 0.03em;
 }
 
+.team-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.team-box {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-cards .team-box:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-box {
+  width: 270px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
 .team {
   background-color: var(--secondary-bg-color);
 }
 
 .team-name {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -165,6 +302,8 @@ a {
 }
 
 .team-pos {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -193,7 +332,12 @@ a {
 
 /* Footer */
 
+.ft-flex {
+  display: ;
+}
+
 .footer {
+  padding-top: 60px;
   background-color: var(--hero-color);
 }
 
@@ -202,6 +346,9 @@ a {
 }
 
 .adress {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 9px;
   color: var(--primary-bg-color);
 
   font-size: 14px;
@@ -210,8 +357,9 @@ a {
 }
 
 .footer-contacts-info {
-  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -246,20 +394,6 @@ a {
 .button:focus {
   color: var(--primary-bg-color);
   background-color: var(--action-color);
-}
-
-.container {
-  width: 1200px;
-  outline: #000000 solid 2px;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 .section {
